@@ -1,0 +1,28 @@
+.teacher-item {
+    width: 320px;
+    height: 320px;
+    position: relative;
+}
+
+.teacher-item img {
+    width: 320px;
+    height: 320px;
+}
+
+.teacher-item__title {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    bottom: 30px;
+    left: 35px;
+}
+
+.teacher-item__title p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.teacher-title__position {
+    font-size: 15px;
+}

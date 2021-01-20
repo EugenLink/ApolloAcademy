@@ -1,0 +1,35 @@
+.app-header {
+    font-size: 11px;
+    color: #4f4f4f;
+    font-weight: bold;
+
+}
+
+.header-nav {
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list-item {
+    padding: 8px 8px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .4s;
+}
+
+.nav-list-item:first-child {
+    margin-right: 35px;
+}
+
+.nav-list-item:hover {
+    color: #4abfbe;
+    border-color: #e1e4e8!important;
+    opacity: .9;
+}
+
+.logo-name {
+    font-size: 28px;
+    color: #259e99;
+    font-weight: normal;
+}

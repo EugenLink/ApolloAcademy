@@ -1,0 +1,55 @@
+.location-block {
+    margin-top: 30px;
+    background: #010e1e;
+}
+
+.map {
+    padding: 25px 0;
+}
+
+.location-title {
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.map {
+    margin: 0 auto;
+}
+
+.location-adress {
+    color: white;
+    font-weight: 500;
+    line-height: 2em;
+    padding-bottom: 200px;
+}
+
+.location-contacts {
+    padding: 45px 55px;
+}
+
+.social-icons {
+    position: relative;
+}
+.anchor-block {
+    width: 44px;
+    position: absolute;
+    top: -10px;
+    left: 470px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.social-icons a img {
+    width: 34px;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.social-icons img:hover {
+   border: 2px solid white;
+}
+
+

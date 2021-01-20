@@ -1,0 +1,21 @@
+.footer-bg {
+    background: #010e1e;
+    margin-top: 25px;
+    min-height: 60px;
+}
+
+.footer-info {
+    color: rgba(255,255,255, 0.5);
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-info-list .footer-info-item {
+    margin-right: 26px;
+}
+
+.footer-info-social img {
+    width: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}

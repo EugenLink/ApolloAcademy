@@ -1,0 +1,34 @@
+.info-back {
+    height: 600px;
+    background: url("lookout-main.banner.jpg") no-repeat center top / cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 31px 31px 0 0;
+}
+
+
+.info-about {
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    left: 580px;
+    top: 100px;
+}
+
+.info-about__welcom {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.info-about__text {
+    opacity: 70%;
+    font-size: 20px;
+}
+
+.feedback-form__button {
+    margin-left: 20px;
+    transition: .4s;
+}

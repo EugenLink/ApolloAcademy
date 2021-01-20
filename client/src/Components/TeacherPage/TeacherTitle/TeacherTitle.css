@@ -1,0 +1,14 @@
+.teacher-title {
+    padding-top: 35px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.teacher-title__p {
+    font-weight: 400;
+    font-size: 22px;
+    color: #1d465e;
+    line-height: 1.5em;
+}

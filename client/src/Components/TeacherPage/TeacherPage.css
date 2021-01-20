@@ -1,0 +1,11 @@
+.tp-background {
+    background: rgb(240, 245, 248);
+    border-radius: 25px;
+}
+
+.teacher-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1300px;
+}
