@@ -2,8 +2,8 @@
     margin-top: 30px;
     width: 43%;
     height: 250px;
-    border: 2px solid #259e99;
-    border-radius: 5px;
+    border: 1px solid black;
+
 }
 
 .achivment-item__block {
@@ -39,5 +39,5 @@
     left: -9px;
     top: 0;
     position: absolute;
-    border: 1px sold black;
+    border: 1px solid black;
 }

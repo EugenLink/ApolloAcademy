@@ -1,0 +1,24 @@
+.form_field {
+    padding: 5px 10px;
+    width: 100%;
+}
+
+
+.form-error {
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+    border-radius: 25px;
+    background: rgba(255,0,0,.7);
+    position: absolute;
+    width: 180px;
+    text-align: center;
+    left: 38px;
+    top: -8px;
+}
+
+
+.clear_block {
+    height: 29px;
+    position: relative;
+}
