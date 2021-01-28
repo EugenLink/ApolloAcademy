@@ -7,18 +7,23 @@
 .form-error {
     font-style: italic;
     font-size: 14px;
-    color: white;
-    border-radius: 25px;
-    background: rgba(255,0,0,.7);
+    color: rgba(255,255,255,.7);
     position: absolute;
-    width: 180px;
+
     text-align: center;
-    left: 38px;
-    top: -8px;
+    width: 100%;
+    background: #ff5159;
+    border: 1px solid #db2d2d;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
 }
 
 
 .clear_block {
     height: 29px;
     position: relative;
+}
+
+.form-panel {
+    width: 350px;
 }

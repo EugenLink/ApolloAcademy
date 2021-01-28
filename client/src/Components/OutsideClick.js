@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import {useStore} from "effector-react";
 import { toogleSelect} from "../state_management";
 
 function useOutsideAlerter(ref) {

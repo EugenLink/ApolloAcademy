@@ -15,7 +15,7 @@ const SelectInput = ({name, values}) => {
 
     return (
         <div className="select_block">
-            <Field name={name} type={'text'} value={holderValue} className='text-input select-input' disabled={true} />
+            <Field name={name} type='text' value={holderValue} className='text-input select-input'/>
             <div className="select_block_click" onClick={() => toogleSelect()}>
             </div>
             {
@@ -23,7 +23,7 @@ const SelectInput = ({name, values}) => {
                     <OutsideClick>
                         <ul className="select_options">
                             {values.map(el => {
-                                return <li className="select_option" onClick={() => toogleValueSelect(changeValueSelect)}>{el.holder}</li>
+                                return <li className="select_option" key={el.holder} onClick={() => toogleValueSelect(changeValueSelect)}>{el.holder}</li>
                             })}
                         </ul>
                     </OutsideClick>

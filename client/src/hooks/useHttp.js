@@ -1,11 +1,12 @@
-import { useCallback, useState} from 'react'
+import { useCallback} from 'react'
+import {setLoading, setError} from "../state_management";
 
 export const useHttp = () => {
-    let [loading, setLoading] = useState('false')
-    let [error, setError] = useState(null)
 
     const request = useCallback(async (url, method = 'GET', body = null, headers = {}) => {
-        setLoading(true);
+
+        setLoading(true)
+
         try {
             if (body) {
                 body = JSON.stringify(body)
@@ -30,8 +31,8 @@ export const useHttp = () => {
         }
     }, [])
 
-    const clearError = useCallback(() => setError(null), [])
+    const clearError = useCallback(() => setError(false), [])
 
-    return {request, clearError, error, loading}
+    return {request, clearError}
 }
 

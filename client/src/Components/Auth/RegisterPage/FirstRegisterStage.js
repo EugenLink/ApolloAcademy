@@ -1,21 +1,22 @@
 import React from 'react';
-import {Formik, Field} from "formik";
+import {Formik} from "formik";
 import InputFormField from "./FormField/InputFormField";
 import {SignupSchema1} from "../ValidationSchemas/SignUpSchema";
-import FormPanel from "./FormPanel/FormPanel";
-import {$stage, changeStage} from "../../../state_management";
-import {useStore} from "effector-react";
+import {changeStage, changeRegisterValue} from "../../../state_management";
+
+import FormPanel from "../FormPanel/FormPanel";
 
 
 const FirstRegisterStage = () => {
-    const stage = useStore($stage)
+
     return (
         <Formik initialValues={{
             firstName: '',
             lastName: '',
             age: ''
         }} onSubmit={(values) => {
-            changeStage()
+            changeRegisterValue(values)
+            changeStage(2)
         }}
         validationSchema={SignupSchema1}>
             {({errors, touched}) => {

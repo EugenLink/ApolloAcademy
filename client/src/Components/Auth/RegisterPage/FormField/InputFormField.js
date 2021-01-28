@@ -3,7 +3,10 @@ import './FormField.css'
 import {Field} from "formik";
 import ErrorField from "./ErrorField";
 
+
 const InputFormField = ({disabled, type, holder, name, errors = {}, touched = {}}) => {
+
+
 
     const styled = errors[name] && touched[name] ? 'text-input error' : 'text-input'
 
@@ -15,6 +18,7 @@ const InputFormField = ({disabled, type, holder, name, errors = {}, touched = {}
                 {
                     errors[name] && touched[name] ? <ErrorField text = {errors[name]}/> : null
                 }
+
             </div>
 
         </div>

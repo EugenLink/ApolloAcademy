@@ -15,12 +15,7 @@ export const SignupSchema1 = Yup.object().shape({
 });
 
 export const SignupSchema2 = Yup.object().shape({
-    selected: Yup.string().required(''),
-    showRole: Yup.boolean(),
-    role: Yup.string().when('showRole', {
-        is: true,
-        then: Yup.string().required('Обязательное поле!')
-    }),
+    role: Yup.string(),
     secretKey: Yup.string().required('Обязательное поле!')
 });
 
