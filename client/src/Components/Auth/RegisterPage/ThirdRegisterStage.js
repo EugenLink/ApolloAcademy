@@ -6,7 +6,7 @@ import FormPanel from "../FormPanel/FormPanel";
 import {
     $registerValues,
     changeRegisterValue,
-    changeStage,
+    changeStage, clearRegisterValues,
     setError
 } from "../../../state_management";
 import {useStore} from "effector-react";
@@ -31,9 +31,12 @@ const SecondRegisterStage = () => {
             result.then(res => {
                 if (res.errors) {
                     setError(res.errors)
+                    clearRegisterValues()
                     changeStage(1)
                 }
+
             })
+
         }}
                 validationSchema={SignupSchema3}>
             {({errors, touched}) => {

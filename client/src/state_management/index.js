@@ -14,8 +14,12 @@ export const $selectValue = createStore('student').on(toogleValueSelect, (_, val
 
 export const changeRegisterValue = createEvent()
 
+export const clearRegisterValues = createEvent()
+
 export const $registerValues = createStore({}).on(changeRegisterValue, (value, data) => {
     return {...value, ...data}
+}).on(clearRegisterValues, _ => {
+    return {}
 })
 
 

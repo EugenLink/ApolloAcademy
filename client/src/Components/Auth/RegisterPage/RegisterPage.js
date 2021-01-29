@@ -28,23 +28,31 @@ const RegisterPage = () => {
     }
 
     const errorRegister = (error) => {
-        let classes = 'register-error';
-        let messages = ''
 
         if (error) {
             setTimeout(() => {
                 setError(null)
             }, 5000)
-            classes = `register-error opacity`
-            messages = error.map(el => <p key = {el.msg}>{el.msg}</p>)
+
+            if (typeof error === 'object') {
+                return (
+                    <div className={'register-error'}>
+                        {error.map(el => <p key={el.msg}>{el.msg}</p>)}
+                    </div>
+                )
+            } else {
+                return (
+                    <div className={'register-error'}>
+                        {error}
+                    </div>
+                )
+            }
+
+
 
         }
 
-        return (
-            <div className={classes}>
-                {messages}
-            </div>
-        )
+
     }
 
 
