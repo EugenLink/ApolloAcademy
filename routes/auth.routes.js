@@ -12,6 +12,7 @@ router.post('/register',
                 check('lastName', 'Некорректная фамилия').isLength({min: 2, max: 30}).isString(),
             ],
             async (req, res) => {
+
                 try {
                     const errors = validationResult(req)
                     const {email, password} = req.body;
