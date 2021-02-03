@@ -16,7 +16,7 @@ const About = () => {
                     <ScrollAnimation animateIn='bounceInLeft' >
                         <p className="info-about__welcom">Позаботьтесь о будущем ваших детей, и отправьте их в нашу академию!</p>
                         <div className="feedback-form d-flex">
-                            <input className="input feedback-form__input" placeholder="Номер телефона" type="tel" pattern="+7[0-9]{10}" value="+7"/>
+                            <input className="input feedback-form__input" placeholder="Номер телефона" type="tel" pattern="+7[0-9]{10}"/>
                             <div className="button feedback-form__button">Оставить заявку
                             </div>
                         </div>

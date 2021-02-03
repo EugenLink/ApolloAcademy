@@ -6,24 +6,10 @@ const bcrypt = require('bcrypt');
 const User = require('../models/User')
 
 router.post('/register',
-    [
-                check('age', 'Некорректный возраст').isLength({min: 2, max: 2}),
-                check('firstName', 'Некорректное имя').isLength({min: 2, max: 30}).isString(),
-                check('lastName', 'Некорректная фамилия').isLength({min: 2, max: 30}).isString(),
-            ],
             async (req, res) => {
 
                 try {
-                    const errors = validationResult(req)
                     const {email, password} = req.body;
-
-                    //Check validation errors
-                    if (!errors.isEmpty()) {
-                        res.status(400).json({
-                            errors: errors.array()
-                        })
-                    }
-
 
 
                     const checkValid = await User.findOne({email})

@@ -11,7 +11,11 @@ export const SignupSchema1 = Yup.object().shape({
         .min(2, 'Слишком короткое!')
         .max(50, 'Слишком длинное!')
         .required('Обязательное поле!'),
-    age: Yup.number('Введите число').required('Введите возраст').positive().integer().typeError('Введите число')
+    age: Yup.string('Введите число')
+        .required('Введите возраст')
+        .matches(/^[0-9]+$/, "Введите число")
+        .min(2, 'Некорректный возраст')
+        .max(2, 'Некорректный возраст')
 });
 
 export const SignupSchema2 = Yup.object().shape({

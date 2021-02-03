@@ -33,3 +33,5 @@ export const setError = createEvent('set error')
 
 export const $error = createStore(null).on(setError, (_, payload) => payload)
 
+
+$registerValues.watch(console.log)

@@ -6,8 +6,7 @@ import FormPanel from "../FormPanel/FormPanel";
 import {
     $registerValues,
     changeRegisterValue,
-    changeStage, clearRegisterValues,
-    setError
+    changeStage, setError
 } from "../../../state_management";
 import {useStore} from "effector-react";
 import {useHttp} from '../../../hooks/useHttp'
@@ -24,6 +23,8 @@ const SecondRegisterStage = () => {
             result
                 .then(res => {
                     if (res.status === 200) {
+
+                    } else {
 
                     }
                 })

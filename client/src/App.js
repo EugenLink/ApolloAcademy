@@ -8,7 +8,6 @@ import TeacherPage from "./Components/TeacherPage/TeacherPage";
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
 import LoginPage from "./Components/Auth/LoginPage/LoginPage";
 import RegisterPage from "./Components/Auth/RegisterPage/RegisterPage";
-import Popup from "./Components/Popup/Popup";
 
 const App = () => {
   return (
@@ -24,7 +23,6 @@ const App = () => {
                               <Route path='/auth/register' component={RegisterPage}/>
                               <Route path='/auth/login' component={LoginPage}/>
                               <Route render={() => <h1 className='not-found'><span>404</span> Page Not Found</h1>} />
-
                           </Switch>
                       </div>
                   </ErrorBoundary>

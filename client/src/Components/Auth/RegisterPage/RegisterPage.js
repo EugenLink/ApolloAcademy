@@ -1,7 +1,7 @@
 import React from 'react';
 import './RegisterPage.css';
 import './FormField/MyInputs.css'
-import {$error, $stage, setError} from '../../../state_management'
+import {$error, $stage, clearRegisterValues, setError} from '../../../state_management'
 import {useStore} from "effector-react";
 
 import FirstRegisterStage from "./FirstRegisterStage";
@@ -37,7 +37,7 @@ const RegisterPage = () => {
             if (typeof error === 'object') {
                 return (
                     <div className={'register-error'}>
-                        {error.map(el => <p key={el.msg}>{el.msg}</p>)}
+                        <p>{error}</p>
                     </div>
                 )
             } else {

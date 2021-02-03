@@ -41,7 +41,7 @@ const Achivments = () => {
                                  animateType = 'bounceInLeft';
                             }
                             if (el.image && el.text && el.title) {
-                                return <AchivmentItem id={current} animate = {animateType} order = {orderName} title = {el.title} img = {el.image} text = {el.text}/>
+                                return <AchivmentItem key = {el.title} id={current} animate = {animateType} order = {orderName} title = {el.title} img = {el.image} text = {el.text}/>
                             } else {
                                 return null
                             }
