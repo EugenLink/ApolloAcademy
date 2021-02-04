@@ -1,10 +1,10 @@
 import React from 'react'
 import './FormField.css'
 import {Field} from "formik";
-import ErrorField from "./ErrorField";
 
 
-const InputFormField = ({disabled, type, holder, name, errors = {}, touched = {}}) => {
+
+const InputFormField = ({label, disabled, type, holder, name, errors = {}, touched = {}}) => {
 
 
 
@@ -12,15 +12,9 @@ const InputFormField = ({disabled, type, holder, name, errors = {}, touched = {}
 
 
     return (
-        <div >
+        <div className='field_input'>
+            <label htmlFor={name} className='label_input'>{label}</label>
             <Field autoComplete = 'off' className={styled} name = {name} placeholder = {holder} type = {type} disabled={disabled} />
-            <div className='clear_block'>
-                {
-                    errors[name] && touched[name] ? <ErrorField text = {errors[name]}/> : null
-                }
-
-            </div>
-
         </div>
     )
 }

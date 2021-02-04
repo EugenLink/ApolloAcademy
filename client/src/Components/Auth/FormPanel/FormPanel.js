@@ -13,12 +13,9 @@ const FormPanel = (props)  => {
     return (
         <div className='form-panel'>
             {loading ? <Loader /> : null}
-            <div className='the_seam'>
-
                 <Form>
                     {props.children}
                 </Form>
-            </div>
         </div>
 
     )
