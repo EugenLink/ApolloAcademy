@@ -14,8 +14,8 @@ const SelectInput = ({name, values}) => {
     const changeValueSelect = selectValue === 'student' ? 'teacher' : 'student'
 
     return (
-        <div className="select_block">
-            <Field name={name} type='text' value={holderValue} className='text-input select-input'/>
+        <div className="select_block field_input">
+            <Field name={name} type='text' value={holderValue} className='text-input select-input' disabled />
             <div className="select_block_click" onClick={() => toogleSelect()}>
             </div>
             {
